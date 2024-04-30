@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>swebcat</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <RuntimeIdentifiers>win-x64;osx-arm64;linux-x64</RuntimeIdentifiers>
+
+    <PublishSelfContained>false</PublishSelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+    <PublishRelease>true</PublishRelease>
+    <PublishReadyToRun>true</PublishReadyToRun>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SwebSocket" Version="1.0.2" />
+    <PackageReference Include="CommandLineParser" Version="2.9.1" />
+    <PackageReference Include="crayon" Version="2.0.69" />
+  </ItemGroup>
+
+</Project>
